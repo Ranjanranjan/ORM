@@ -1,5 +1,5 @@
 # Ex02 Django ORM Web Application
-## Date: 
+## Date: 31-03-24
 
 ## AIM
 To develop a Django application to store and retrieve data from a Book database using Object Relational Mapping(ORM).
@@ -24,11 +24,35 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 
-Include your code here
+I```
+Models.py
+
+from django.db import models
+from django.contrib import admin
+
+class footballplayer (models.Model):
+    numofmatch=models.IntegerField()
+    name=models.CharField(max_length=100)
+    salary=models.IntegerField()
+    age=models.IntegerField()
+    height=models.IntegerField()
+
+class footballplayerAdmin(admin.ModelAdmin):
+    list_display=('numofmatch','name','salary','age','height')
+
+Admin.py
+
+from django.contrib import admin
+from .models import footballplayer,footballplayerAdmin
+admin.site.register(footballplayer,footballplayerAdmin)
+
+```
+
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![wer](https://github.com/Ranjanranjan/ORM/assets/130027697/2f4edcbc-9de7-4761-a497-a6dff36724aa)
+
 
 
 ## RESULT
