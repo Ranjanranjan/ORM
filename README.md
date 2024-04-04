@@ -1,5 +1,6 @@
 # Ex02 Django ORM Web Application
-## Date: 31-03-24
+
+## Date: 04-04-24
 
 ## AIM
 To develop a Django application to store and retrieve data from a Book database using Object Relational Mapping(ORM).
@@ -23,8 +24,7 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-
-I```
+```
 Models.py
 
 from django.db import models
@@ -51,7 +51,8 @@ admin.site.register(footballplayer,footballplayerAdmin)
 
 ## OUTPUT
 
-![wer](https://github.com/Ranjanranjan/ORM/assets/130027697/2f4edcbc-9de7-4761-a497-a6dff36724aa)
+
+![Screenshot 2024-04-04 093429](https://github.com/Ranjanranjan/ORM/assets/130027697/edf005b9-e3d0-46c3-b1fe-59b120c607c6)
 
 
 
